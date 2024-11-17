@@ -14,24 +14,18 @@
             align-items: center;
             background-color: #f0f0f0;
         }
-        .error-image {
+        picture img {
             width: 100%;
+            max-width: 500px; /* Ajusta este valor según el diseño */
             height: auto;
-        }
-        @media (max-width: 768px) {
-            .error-image {
-                max-width: 80%;
-            }
         }
     </style>
 </head>
 <body>
-<picture>
-    <source srcset="./img/error404m.png" media="(max-width: 768px)">
-    <!-- Imagen móvil -->
-    <img src="./img/error404.png" alt="Error 404">
-</picture>
-
+    <picture>
+        <source srcset="img/error404m.png" media="(max-width: 768px)">
+        <img src="img/error404.png" alt="Error 404">
+    </picture>
 </body>
 </html>
 
