@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Sin Conexión</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+.error-image {
+    width: 100%;
+    height: auto;
+}
+        @media (max-width: 768px) {
+            .error-image {
+                width: 90%; /* Ajusta a un 90% del ancho en pantallas pequeñas */
+                max-width: 90%; /* Mantén el ancho dentro de límites */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source srcset="img/error404m.png" media="(max-width: 768px)"> <!-- Mobile image -->
+        <img src="img/error404.png" alt="Error 404" class="error-image"> <!-- Default to PC image -->
+    </picture>
+    
+</body>
+</html>
+
